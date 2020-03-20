@@ -1,0 +1,24 @@
+/*find a minimun age and different betwenn min and person*/
+
+#include <stdio.h>
+
+
+int main()
+{
+    int array[10];
+    int i, youngPer;
+    youngPer = 100;
+     for (i = 0; i < 10; i = i + 1)
+     {
+         scanf("%d",&array[i]);
+         if (array[i] < youngPer)
+             youngPer= array[i];
+     }
+     printf("Younger person:%d\n",youngPer);
+     for (i=0; i<10;i=i+1)
+        {
+            printf("\nDifferent beetwen person, which age is %d and young peson is %d ", array[i],array[i]-youngPer);
+        }
+     
+   return 0;       
+}
