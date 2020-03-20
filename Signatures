@@ -1,0 +1,22 @@
+/*in first day 5 friends had a 5 signatures. If every friend in the next days to will signatures * 2 . How many days needs to total signatures =1000*/
+
+
+#include <stdio.h>
+
+int main(void)
+{
+int signNeeds = 1000;    
+int totalSign = 5;
+int day=0;
+int newSign =5;
+while (totalSign<1000)
+{
+    day++;
+    newSign= 2 * newSign;
+    totalSign=newSign+totalSign;
+    printf("In day %d were %d signure\n",day,totalSign);
+}
+
+ return 0;
+}
+ 
