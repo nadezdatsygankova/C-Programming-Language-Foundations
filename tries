@@ -1,0 +1,23 @@
+/*tries*/
+
+#include <stdio.h>
+
+
+int main()
+{
+    int h,l;
+    scanf("%d",&h);
+    scanf("%d",&l);
+       if (h<=5 && l>=8)
+          printf("Tinuviel");
+       else if (h>=10 && l>=10)
+          printf("Calaelen");
+       else if (h<=8 && l<=5) 
+          printf("Falarion");
+       else if (h>=12 && l<=7)
+          printf("Dorthonion");
+       else 
+          printf("Uncertain");
+          
+          
+}
