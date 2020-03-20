@@ -1,0 +1,28 @@
+
+//Play games. Sum of number 
+
+#include <stdio.h>
+
+int main(void)
+{
+int i;
+int j;
+int player;
+int number;
+int value;
+int sum=0;
+scanf("%d %d",&player,&number);
+for (i=0;i<player;i++){
+    for (j=0;j<number;j++)
+    {
+        scanf("%d",&value);
+        sum = sum+value;
+        
+    }
+    printf("Player %d sum %d", i, sum);
+    sum = 0;
+    
+}
+ return 0;
+}
+ 
