@@ -1,0 +1,32 @@
+/*Develop a C code that creates the Fibonacci series:
+
+1 + 1 = 2
+1 + 2 = 3
+2 + 3 = 5
+3 + 5 = 8
+5 + 8 = 13
+
+or
+
+1  1  2  3  5  8  13 21 34 55 89 ...
+
+Your code will ask for a positive number N and generates N of the above series.
+*/
+
+
+#include <stdio.h>
+int main() {
+    int i, n, x1 = 0, x2 = 1, next;
+    printf("Enter the number of terms: ");
+    scanf("%d", &n);
+    printf("Fibonacci Series: ");
+
+    for (i = 1; i <= n; ++i) {
+        printf("%d, ", x1);
+        next = x1 + x2;
+        x1 = x2;
+        x2 = next;
+    }
+
+    return 0;
+}
