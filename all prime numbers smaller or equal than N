@@ -1,0 +1,42 @@
+/*Develop a C code that gets a positive number N and prints out all prime numbers smaller or equal than N.
+
+Hint: You need a loop that iterates a candidate from 2 to N. 
+for each candidate, calculate the number of divisors of that candidate
+(similar to the code attached) and if that number of divisors is 2, announce the candidate as a Prime number.
+
+Sample run:
+Enter a positive number: 10
+2 3 5 7
+Enter a positive number: 20
+2 3 5 7 11 13 17 19*/
+
+//1 version
+
+#include <stdio.h>
+
+#include<stdio.h>
+
+int main()
+{
+  int i,j,n,count=0;
+  printf("Enter a positive number:");// Enter a positive number
+  scanf("%d",&n);
+    for (i=2;i<=n;i++)
+     {
+        for(j=2;j<i;j++)
+         {
+           if (i%j==0)
+              count=count+1; //count  divisors
+              break;
+         }
+
+          if (count == 0)
+             printf(" %d",i);
+           else
+                count=0;
+
+
+
+       }
+
+     }
