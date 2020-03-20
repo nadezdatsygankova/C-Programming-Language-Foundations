@@ -1,0 +1,26 @@
+/*10 people with ages. Find minimum age and calculate differentence between minimun age and age*/
+
+#include <stdio.h>
+
+int main(void)
+{
+int i;
+int ageMin;
+ageMin=100;
+int array[10];
+
+for (i=0;i<10;i++)
+{
+    scanf("%d",&array[i]);
+    if (array[i]<ageMin)
+       ageMin=array[i];
+       
+}
+for (i=0;i<10;i++)
+{
+printf("Different beetween %d age and minimum age is %d\n",array[i],array[i]-ageMin);
+ 
+ }
+ return 0;
+}
+ 
