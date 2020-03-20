@@ -1,0 +1,41 @@
+/*Your job is to find the length of the longest word in a text with no punctuation or special 
+characters of any kind - only contains words. To do so, please write a C-program that takes as a input
+first the number of words in a text, followed by all of the words in the text. The output of your program 
+should be the length of the longest word in the text.
+
+To simplify your program, you can assume that the longest word will not exceed 100 characters.*/
+
+#include <stdio.h>
+
+int main(void)
+{
+int number;
+int i=0;
+int l=0;
+int k=0;
+int j=0;
+int max=0;
+scanf("%d",&number);
+char word[100];
+int lengh[100];
+for (i=0;i<10;i++)
+{
+    lengh[i] =0;
+}
+for (j=0;j<number;j++)
+{
+    scanf("%s",word);
+    l=0;
+    while(word[l] !='\0')
+    {
+        l++;
+    }
+    lengh[l]=lengh[l]+1;
+}
+for (k=0;k<10;k++)
+{
+    if (lengh[k]>0)
+      max = k;
+}
+printf("%d",max);
+}
