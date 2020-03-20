@@ -1,0 +1,18 @@
+//work with strings
+
+
+#include <stdio.h>
+
+int main(void)
+{
+char newWord[10];
+printf("Enter a new word unless 9 characters:");
+scanf("%s",newWord);
+printf("%s\n",newWord);
+printf("%c  %c  %c \n", newWord[0],newWord[1],newWord[2]);
+newWord[1]='s';
+printf("%s",newWord);
+
+
+ return 0;
+}
