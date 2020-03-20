@@ -1,0 +1,22 @@
+/*Sort string alphabetically*/
+
+
+#include <stdio.h>
+
+int main(void)
+{
+int i=0;
+char word1[10];
+char word2[10];
+scanf("%s",word1);
+scanf("%s",word2);
+
+while (word1[i]!='\0' && word2[i]!= '\0' && word1[i] == word2[i]) 
+        i++;
+    if (word1[i] < word2[i])
+        printf("%s comes before %s in the alphabet.\n", word1, word2);
+    else if (word1[i]>word2[i])
+        printf("%s comes after %s in the alphabet.\n", word1, word2);
+    else printf("You entered the same word, %s, twice.\n", word1);
+
+}
